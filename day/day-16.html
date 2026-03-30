@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Day 16 — FCA Conduct of Business Rules (Ch7)</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;background:#f6f8fb;color:#1f2937;line-height:1.7}
+.hdr{background:#12355b;color:#fff;padding:18px 20px;position:sticky;top:0;z-index:5}
+.hdr a{color:#fff;opacity:.85;text-decoration:none}
+main{max-width:860px;margin:0 auto;padding:20px}
+.panel{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:22px;margin:18px 0}
+h2{font-size:1.2rem;margin:18px 0 10px;color:#12355b}
+h3{font-size:1rem;color:#374151;margin:12px 0 6px}
+p{margin:8px 0}
+ul,ol{padding-left:20px;margin:8px 0}
+li{margin:5px 0}
+.tag{display:inline-block;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:700;margin-right:4px}
+.tag.uk{background:#dbeafe;color:#1d4ed8}
+.tag.exam{background:#fef3c7;color:#92400e}
+.tag.kw{background:#f0fdf4;color:#166534}
+.tag.trap{background:#fff1f2;color:#be123c}
+.boxes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0}
+.box{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:14px}
+.boxes-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:12px 0}
+.box3{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:12px;font-size:13px}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px}
+th,td{border:1px solid #e5e7eb;padding:8px 10px;text-align:left}
+th{background:#dbeafe;color:#1d4ed8;font-weight:700}
+.mq{border:1px solid #e5e7eb;border-radius:14px;padding:14px;margin:12px 0;background:#fcfcfd}
+.mq-q{font-weight:700;margin-bottom:8px}
+.opts div{padding:5px 0}
+details{margin-top:8px;background:#f8fafc;border-radius:10px;padding:10px 12px}
+summary{cursor:pointer;font-weight:600;color:#12355b}
+.answer strong{color:#166534}
+.done{background:#f0fdf4;border:2px solid #16a34a;border-radius:12px;padding:14px;margin-top:18px;display:flex;align-items:center;gap:10px}
+.done input[type=checkbox]{width:20px;height:20px;accent-color:#16a34a}
+.prev-next{display:flex;justify-content:space-between;padding:16px 0}
+.prev-next a{display:inline-block;padding:10px 16px;background:#12355b;color:#fff;border-radius:10px;text-decoration:none;font-size:14px}
+.muted{color:#6b7280;font-size:13px}
+.warning{background:#fff1f2;border-left:4px solid #be123c;padding:12px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+.success{background:#f0fdf4;border-left:4px solid #16a34a;padding:12px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+.info{background:#fef3c7;border-left:4px solid #f59e0b;padding:12px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+@media(max-width:700px){.boxes,.boxes-3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="hdr">
+<div style="max-width:860px;margin:0 auto">
+<a href="../index.html" style="color:#fff;opacity:.85;text-decoration:none">&#8592; Dashboard</a>
+<h1 style="font-size:1.3rem;margin:4px 0">Day 16 — FCA Conduct of Business Rules (Ch7)</h1>
+<div class="muted">CeMAP 1 · Chapter 7 Topics 1–15</div>
+</div>
+</header>
+<main>
+
+<section class="panel"><h2>Overview (Chapter 7: FCA Conduct of Business Rules)</h2>
+<div class="boxes">
+  <div class="box"><span class="tag uk">CeMAP 1</span><strong>Topics today (Ch7 #1–#15)</strong>
+    <ul>
+      <li>Types of client</li>
+      <li>Vulnerable clients</li>
+      <li>Status disclosure</li>
+      <li>Client money</li>
+      <li>Suitability requirements</li>
+      <li>Best execution vs execution-only</li>
+      <li>Cancellation rights</li>
+      <li>Product disclosure</li>
+      <li>PRIIPs & KIDs</li>
+      <li>Inducements & adviser charging</li>
+      <li>Conflicts of interest</li>
+      <li>Record keeping</li>
+      <li>Data protection / GDPR</li>
+      <li>Consumer Duty in action</li>
+      <li>TCF revisited</li>
+    </ul>
+  </div>
+  <div class="box"><span class="tag exam">Exam Focus</span><strong>High-yield</strong>
+    <ul>
+      <li>Client type definitions</li>
+      <li>Suitability vs execution-only</li>
+      <li>Clear, fair, not misleading + disclosure</li>
+      <li>Inducements banned (must not conflict with duty)</li>
+      <li>Vulnerability + Consumer Duty outcomes</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="panel"><h2>1. Types of Client</h2>
+<div class="boxes">
+  <div class="box"><strong>Retail client</strong><ul><li>Highest protection</li><li>Default for individuals</li><li>Consumer Duty applies</li></ul></div>
+  <div class="box"><strong>Professional client</strong><ul><li>Less protection</li><li>Typically large/corporate/institutional with expertise</li></ul></div>
+  <div class="box"><strong>Eligible counterparty</strong><ul><li>Lowest protection</li><li>Used for wholesale market dealings</li></ul></div>
+</div>
+</section>
+
+<section class="panel"><h2>2. Vulnerable Clients — do the right thing</h2>
+<ul>
+  <li>Vulnerability can be temporary (bereavement) or permanent (cognitive impairment).</li>
+  <li>Firms must adapt communications/support to ensure good outcomes.</li>
+</ul>
+<div class="info"><strong>Exam Tip</strong><p>If a scenario hints vulnerability (age, illness, grief, low literacy), correct answer usually involves slowing down, confirming understanding, offering support, documenting.</p></div>
+</section>
+
+<section class="panel"><h2>3. Status Disclosure</h2>
+<ul>
+  <li>Must disclose whether advice is independent or restricted (where applicable).</li>
+  <li>Must disclose services, scope, and charges clearly before providing advice.</li>
+</ul>
+</section>
+
+<section class="panel"><h2>4. Client Money</h2>
+<ul>
+  <li>Client money must be segregated (CASS rules) and protected from firm creditors.</li>
+  <li>Accurate reconciliation and controls are required.</li>
+</ul>
+</section>
+
+<section class="panel"><h2>5. Suitability Requirements</h2>
+<ul>
+  <li>Advice must be suitable for the client’s objectives, circumstances, and risk profile.</li>
+  <li>Requires adequate factfind + risk profiling + explanation of why recommended solution fits.</li>
+</ul>
+<div class="warning"><strong>Exam Trap</strong><p>No factfind = no suitability. If info is insufficient, adviser must not recommend; must gather more info.</p></div>
+</section>
+
+<section class="panel"><h2>6. Best Execution vs Execution-Only</h2>
+<div class="boxes">
+  <div class="box"><strong>Best execution</strong><ul><li>Firm must take all sufficient steps to obtain best possible result for client</li><li>Relevant for dealing/trading services</li></ul></div>
+  <div class="box"><strong>Execution-only</strong><ul><li>No advice given</li><li>Client chooses product/instrument</li><li>Still must give clear disclosures and ensure communications not misleading</li></ul></div>
+</div>
+</section>
+
+<section class="panel"><h2>7. Cancellation rights</h2>
+<ul>
+  <li>Some regulated products have cooling-off/cancellation periods.</li>
+  <li>Client must receive clear information about cancellation and consequences.</li>
+</ul>
+</section>
+
+<section class="panel"><h2>8–9. Product disclosure + PRIIPs / KIDs</h2>
+<ul>
+  <li>Clients must get key information in good time before commitment.</li>
+  <li>PRIIPs: packaged retail and insurance-based investment products require a <strong>KID</strong> (Key Information Document).</li>
+  <li>KID summarises: what product is, risk/return, costs, recommended holding period, complaints.</li>
+</ul>
+</section>
+
+<section class="panel"><h2>10. Inducements & Adviser Charging</h2>
+<ul>
+  <li>Inducements must not conflict with duty to act in client’s best interests.</li>
+  <li>For retail investment advice, commission is generally banned; adviser charging is agreed with client.</li>
+</ul>
+</section>
+
+<section class="panel"><h2>11. Conflicts of Interest</h2>
+<ul>
+  <li>Firms must identify, manage, and disclose conflicts.</li>
+  <li>Example: recommending in-house products because it pays higher fees.</li>
+</ul>
+<div class="warning"><strong>Exam Trap</strong><p>“Disclosure” alone may not be enough — conflicts must be managed. If cannot be managed, avoid the activity.</p></div>
+</section>
+
+<section class="panel"><h2>12. Record Keeping</h2>
+<ul>
+  <li>Keep records to evidence suitability and compliance.</li>
+  <li>Exam-style rule-of-thumb: investment advice records often 5 years; mortgage advice often 3 years.</li>
+</ul>
+</section>
+
+<section class="panel"><h2>13. Data Protection / GDPR</h2>
+<ul>
+  <li>Personal data must be processed lawfully, fairly, transparently.</li>
+  <li>Only collect necessary data; keep secure; retain only as long as needed.</li>
+  <li>Breaches may require reporting to ICO within 72 hours (if risk to individuals).</li>
+</ul>
+</section>
+
+<section class="panel"><h2>14. Consumer Duty in action</h2>
+<ul>
+  <li>Focus on measurable good outcomes (understanding, support, fair value).</li>
+  <li>Especially relevant for vulnerable customers.</li>
+</ul>
+</section>
+
+<section class="panel"><h2>15. Treating Customers Fairly (TCF) revisited</h2>
+<ul>
+  <li>TCF is embedded in Principles for Businesses; Consumer Duty strengthens it.</li>
+</ul>
+</section>
+
+<section class="panel"><h2>Memorise</h2>
+<div class="boxes">
+  <div class="box"><strong>Client types</strong><p>Retail (most protection) · Professional · Eligible counterparty</p></div>
+  <div class="box"><strong>Suitability</strong><p>Needs factfind + risk profile + rationale</p></div>
+  <div class="box"><strong>PRIIPs</strong><p>Packaged products need KID</p></div>
+  <div class="box"><strong>GDPR</strong><p>Report serious breach to ICO within 72 hours</p></div>
+</div>
+</section>
+
+<section class="panel"><h2>Practice Questions (MCQ)</h2>
+<div class="mq"><div class="mq-q">Q1. Which client type receives the highest level of FCA protection?</div>
+<div class="opts"><div>A. Eligible counterparty</div><div>B. Professional client</div><div>C. Retail client</div><div>D. None</div></div>
+<details><summary>Reveal answer</summary><div class="answer"><strong>Answer: C</strong> — Retail clients receive the highest protection.</div></details></div>
+
+<div class="mq"><div class="mq-q">Q2. What is the key output of PRIIPs regulation for retail packaged products?</div>
+<div class="opts"><div>A. Mortgage illustration</div><div>B. KID (Key Information Document)</div><div>C. Share certificate</div><div>D. Credit agreement</div></div>
+<details><summary>Reveal answer</summary><div class="answer"><strong>Answer: B</strong> — PRIIPs requires a KID for packaged retail and insurance-based investment products.</div></details></div>
+
+<div class="mq"><div class="mq-q">Q3. An adviser recommends a product without completing a factfind. Which rule is most directly breached?</div>
+<div class="opts"><div>A. Suitability requirements</div><div>B. Best execution</div><div>C. Market abuse</div><div>D. Basel III</div></div>
+<details><summary>Reveal answer</summary><div class="answer"><strong>Answer: A</strong> — Without sufficient information, advice cannot be shown to be suitable.</div></details></div>
+</section>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Day 15 — FCA Rules for Firms (Ch6)</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;background:#f6f8fb;color:#1f2937;line-height:1.7}
+.hdr{background:#12355b;color:#fff;padding:18px 20px;position:sticky;top:0;z-index:5}
+.hdr a{color:#fff;opacity:.85;text-decoration:none}
+main{max-width:860px;margin:0 auto;padding:20px}
+.panel{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:22px;margin:18px 0}
+h2{font-size:1.2rem;margin:18px 0 10px;color:#12355b}
+h3{font-size:1rem;color:#374151;margin:12px 0 6px}
+p{margin:8px 0}
+ul,ol{padding-left:20px;margin:8px 0}
+li{margin:5px 0}
+.tag{display:inline-block;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:700;margin-right:4px}
+.tag.uk{background:#dbeafe;color:#1d4ed8}
+.tag.exam{background:#fef3c7;color:#92400e}
+.tag.kw{background:#f0fdf4;color:#166534}
+.tag.trap{background:#fff1f2;color:#be123c}
+.boxes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0}
+.box{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:14px}
+.boxes-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:12px 0}
+.box3{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:12px;font-size:13px}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px}
+th,td{border:1px solid #e5e7eb;padding:8px 10px;text-align:left}
+th{background:#dbeafe;color:#1d4ed8;font-weight:700}
+.mq{border:1px solid #e5e7eb;border-radius:14px;padding:14px;margin:12px 0;background:#fcfcfd}
+.mq-q{font-weight:700;margin-bottom:8px}
+.opts div{padding:5px 0}
+details{margin-top:8px;background:#f8fafc;border-radius:10px;padding:10px 12px}
+summary{cursor:pointer;font-weight:600;color:#12355b}
+.answer strong{color:#166534}
+.done{background:#f0fdf4;border:2px solid #16a34a;border-radius:12px;padding:14px;margin-top:18px;display:flex;align-items:center;gap:10px}
+.done input[type=checkbox]{width:20px;height:20px;accent-color:#16a34a}
+.prev-next{display:flex;justify-content:space-between;padding:16px 0}
+.prev-next a{display:inline-block;padding:10px 16px;background:#12355b;color:#fff;border-radius:10px;text-decoration:none;font-size:14px}
+.muted{color:#6b7280;font-size:13px}
+.warning{background:#fff1f2;border-left:4px solid #be123c;padding:12px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+.success{background:#f0fdf4;border-left:4px solid #16a34a;padding:12px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+.info{background:#fef3c7;border-left:4px solid #f59e0b;padding:12px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+@media(max-width:700px){.boxes,.boxes-3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="hdr">
+<div style="max-width:860px;margin:0 auto">
+<a href="../index.html" style="color:#fff;opacity:.85;text-decoration:none">&#8592; Dashboard</a>
+<h1 style="font-size:1.3rem;margin:4px 0">Day 15 — FCA Rules for Firms (Ch6)</h1>
+<div class="muted">CeMAP 1 · Chapter 6 Topics 1–5</div>
+</div>
+</header>
+<main>
+
+<section class="panel"><h2>Overview (Chapter 6: FCA Rules for Firms)</h2>
+<div class="boxes">
+  <div class="box"><span class="tag uk">CeMAP 1</span><strong>Topics today (Ch6 #1–#5)</strong>
+    <ul>
+      <li>Financial Promotions</li>
+      <li>Advertising</li>
+      <li>Reporting & Record Keeping</li>
+      <li>The Myth of CAS (Client Assets Sourcebook) — explained</li>
+      <li>Training & Competence (T&C)</li>
+    </ul>
+  </div>
+  <div class="box"><span class="tag exam">Exam Focus</span><strong>High-yield</strong>
+    <ul>
+      <li>Financial promotions must be <strong>clear, fair and not misleading</strong></li>
+      <li>Who can approve promotions (authorised firm)</li>
+      <li>Record keeping minimums (know the exam-style numbers)</li>
+      <li>Client money segregation principles (CASS)</li>
+      <li>T&C: advisers must be competent + supervised + CPD</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="panel"><h2>1. Financial Promotions</h2>
+<ul>
+  <li>A financial promotion is any communication that invites or induces a person to engage in investment activity.</li>
+  <li>Rule: promotions must be <strong>clear, fair and not misleading</strong>.</li>
+  <li>Under FSMA s21, a promotion must be made by an authorised person or approved by one (unless an exemption applies).</li>
+</ul>
+<div class="warning"><strong>Exam Trap</strong><p>Students mix “regulated activity” and “promotion”. Even if a firm isn’t advising, a promotion can still be regulated. If it’s an invitation/inducement to engage, it needs proper approval.</p></div>
+</section>
+
+<section class="panel"><h2>2. Advertising</h2>
+<ul>
+  <li>Advertising is a subset of promotions: brochures, websites, social posts, emails, paid ads.</li>
+  <li>Must not omit key facts that would change the impression.</li>
+  <li>Must present risks in a balanced way — not hide risk behind small print.</li>
+</ul>
+<div class="info"><strong>Exam Tip</strong><p>If a question asks “what is wrong with this advert?”, look for: exaggerated benefits, missing risk warnings, misleading comparisons, unclear fees.</p></div>
+</section>
+
+<section class="panel"><h2>3. Reporting & Record Keeping</h2>
+<ul>
+  <li>Firms must keep adequate records to evidence compliance, suitability, and client communications.</li>
+  <li>Records help with complaints, audits, and FCA supervision.</li>
+</ul>
+<div class="boxes">
+  <div class="box"><strong>Typical exam numbers (rules-of-thumb)</strong>
+    <ul>
+      <li>Mortgage advice records: often tested as <strong>3 years</strong> minimum (MCOB)</li>
+      <li>Investment advice records: commonly tested as <strong>5 years</strong> minimum (COBS)</li>
+    </ul>
+  </div>
+  <div class="box"><strong>What to keep</strong>
+    <ul>
+      <li>Factfind + objectives</li>
+      <li>Risk profile / vulnerability notes</li>
+      <li>Suitability rationale + disclosures</li>
+      <li>Client communications and approvals</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<section class="panel"><h2>4. The Myth of CAS (CASS) — Client Assets</h2>
+<ul>
+  <li>CASS = Client Assets Sourcebook (often misheard as “CAS”).</li>
+  <li>Purpose: protect client money and custody assets if a firm fails.</li>
+  <li>Key concept: <strong>segregation</strong> — client money held separate from firm money.</li>
+  <li>Client money rules reduce the risk that client funds are used to pay the firm’s creditors.</li>
+</ul>
+<div class="warning"><strong>Exam Trap</strong><p>CASS does not guarantee client money can never be lost. It sets protection rules (segregation, reconciliation). FSCS is the compensation scheme if an authorised firm fails.</p></div>
+</section>
+
+<section class="panel"><h2>5. Training & Competence (T&C)</h2>
+<ul>
+  <li>Firms must ensure staff are competent for their role and remain competent.</li>
+  <li>New advisers must be supervised until competent.</li>
+  <li>Ongoing CPD (continuing professional development) is expected.</li>
+  <li>Competence includes technical knowledge + process compliance (factfind, disclosure, suitability).</li>
+</ul>
+<div class="success"><strong>Kenneth’s Angle</strong><p>T&C is how regulators prevent “bad underwriting” in advice. Like credit committees: decisions must be consistent, documented, and made by qualified people.</p></div>
+</section>
+
+<section class="panel"><h2>Memorise</h2>
+<div class="boxes">
+  <div class="box"><strong>Promotion standard</strong><p>Clear, fair, not misleading</p></div>
+  <div class="box"><strong>s21 approval</strong><p>Promotion must be made/approved by authorised firm (unless exemption)</p></div>
+  <div class="box"><strong>CASS</strong><p>Client money segregation + reconciliation</p></div>
+  <div class="box"><strong>T&C</strong><p>Competent, supervised, CPD</p></div>
+</div>
+</section>
+
+<section class="panel"><h2>Practice Questions (MCQ)</h2>
+<div class="mq"><div class="mq-q">Q1. What is the key FCA standard for financial promotions?</div>
+<div class="opts"><div>A. Profitable, popular and persuasive</div><div>B. Clear, fair and not misleading</div><div>C. Short, simple and unregulated</div><div>D. Approved by FSCS</div></div>
+<details><summary>Reveal answer</summary><div class="answer"><strong>Answer: B</strong> — Promotions must be clear, fair and not misleading.</div></details></div>
+
+<div class="mq"><div class="mq-q">Q2. CASS (Client Assets Sourcebook) is primarily about:</div>
+<div class="opts"><div>A. Setting interest rates</div><div>B. Segregating client money/custody assets from firm money</div><div>C. Paying compensation automatically</div><div>D. Regulating P2P lending</div></div>
+<details><summary>Reveal answer</summary><div class="answer"><strong>Answer: B</strong> — CASS rules are about client asset protection through segregation and controls.</div></details></div>
+
+<div class="mq"><div class="mq-q">Q3. Under FSMA s21, who can approve a financial promotion (generally)?</div>
+<div class="opts"><div>A. Any marketing agency</div><div>B. An authorised person/firm</div><div>C. The FOS</div><div>D. The Bank of England only</div></div>
+<details><summary>Reveal answer</summary><div class="answer"><strong>Answer: B</strong> — Generally, promotions must be made by or approved by an authorised person.</div></details></div>
+</section>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Day 18 — Complaints, FOS & FSCS (Ch9)</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;background:#f6f8fb;color:#1f2937;line-height:1.7}
+.hdr{background:#12355b;color:#fff;padding:18px 20px;position:sticky;top:0;z-index:5}
+.hdr a{color:#fff;opacity:.85;text-decoration:none}
+main{max-width:860px;margin:0 auto;padding:20px}
+.panel{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:22px;margin:18px 0}
+h2{font-size:1.2rem;margin:18px 0 10px;color:#12355b}
+h3{font-size:1rem;color:#374151;margin:12px 0 6px}
+p{margin:8px 0}
+ul,ol{padding-left:20px;margin:8px 0}
+li{margin:5px 0}
+.tag{display:inline-block;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:700;margin-right:4px}
+.tag.uk{background:#dbeafe;color:#1d4ed8}
+.tag.exam{background:#fef3c7;color:#92400e}
+.tag.kw{background:#f0fdf4;color:#166534}
+.tag.trap{background:#fff1f2;color:#be123c}
+.boxes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0}
+.box{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:14px}
+.boxes-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:12px 0}
+.box3{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:12px;font-size:13px}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px}
+th,td{border:1px solid #e5e7eb;padding:8px 10px;text-align:left}
+th{background:#dbeafe;color:#1d4ed8;font-weight:700}
+.mq{border:1px solid #e5e7eb;border-radius:14px;padding:14px;margin:12px 0;background:#fcfcfd}
+.mq-q{font-weight:700;margin-bottom:8px}
+.opts div{padding:5px 0}
+details{margin-top:8px;background:#f8fafc;border-radius:10px;padding:10px 12px}
+summary{cursor:pointer;font-weight:600;color:#12355b}
+.answer strong{color:#166534}
+.done{background:#f0fdf4;border:2px solid #16a34a;border-radius:12px;padding:14px;margin-top:18px;display:flex;align-items:center;gap:10px}
+.done input[type=checkbox]{width:20px;height:20px;accent-color:#16a34a}
+.prev-next{display:flex;justify-content:space-between;padding:16px 0}
+.prev-next a{display:inline-block;padding:10px 16px;background:#12355b;color:#fff;border-radius:10px;text-decoration:none;font-size:14px}
+.muted{color:#6b7280;font-size:13px}
+.warning{background:#fff1f2;border-left:4px solid #be123c;padding:12px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+.success{background:#f0fdf4;border-left:4px solid #16a34a;padding:12px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+.info{background:#fef3c7;border-left:4px solid #f59e0b;padding:12px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+@media(max-width:700px){.boxes,.boxes-3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="hdr">
+<div style="max-width:860px;margin:0 auto">
+<a href="../index.html" style="color:#fff;opacity:.85;text-decoration:none">&#8592; Dashboard</a>
+<h1 style="font-size:1.3rem;margin:4px 0">Day 18 — Complaints, FOS & FSCS (Ch9)</h1>
+<div class="muted">CeMAP 1 · Chapter 9 Topics 1–3</div>
+</div>
+</header>
+<main>
+
+<section class="panel"><h2>Overview (Chapter 9: Complaints and Disputes)</h2>
+<div class="boxes">
+  <div class="box"><span class="tag uk">CeMAP 1</span><strong>Topics today (Ch9 #1–#3)</strong>
+    <ul>
+      <li>Complaints process</li>
+      <li>The Ombudsman (FOS)</li>
+      <li>The FSCS</li>
+    </ul>
+  </div>
+  <div class="box"><span class="tag exam">Exam Focus</span><strong>High-yield</strong>
+    <ul>
+      <li>8-week final response rule (typical exam focus)</li>
+      <li>FOS vs FSCS (dispute resolution vs compensation on firm failure)</li>
+      <li>FSCS deposit protection key number: £85,000 per person per institution</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="panel"><h2>1. Complaints</h2>
+<ul>
+  <li>A complaint is an expression of dissatisfaction (oral or written) about a firm’s service or product.</li>
+  <li>Firms must have a documented complaints procedure and handle complaints fairly, consistently, promptly.</li>
+  <li>Clients must be told how to complain and what happens next.</li>
+</ul>
+<div class="boxes">
+  <div class="box"><strong>Common exam timeline</strong>
+    <ul>
+      <li>Acknowledge promptly</li>
+      <li>Investigate and provide a <strong>final response within 8 weeks</strong></li>
+      <li>If not resolved, client can escalate to FOS</li>
+    </ul>
+  </div>
+  <div class="box"><strong>What a final response should include</strong>
+    <ul>
+      <li>Decision + reasons</li>
+      <li>Any redress offered</li>
+      <li>FOS referral rights + time limits</li>
+    </ul>
+  </div>
+</div>
+<div class="warning"><strong>Exam Trap</strong><p>FOS is usually only approached AFTER the firm has had a chance to resolve internally. Many questions test “what happens next?” — internal procedure first, then FOS.</p></div>
+</section>
+
+<section class="panel"><h2>2. The Ombudsman (FOS)</h2>
+<ul>
+  <li>FOS = Financial Ombudsman Service.</li>
+  <li>Independent dispute resolution for eligible complainants.</li>
+  <li>Free to consumers; firms pay case fees.</li>
+  <li>Can order redress; decisions can be binding on firms (if consumer accepts).</li>
+</ul>
+<div class="info"><strong>Exam Tip</strong><p>If the firm is still trading and the issue is mis-selling / poor service, think FOS. If the firm has failed, think FSCS.</p></div>
+</section>
+
+<section class="panel"><h2>3. The FSCS</h2>
+<ul>
+  <li>FSCS = Financial Services Compensation Scheme.</li>
+  <li>Compensation when an authorised firm is unable to meet claims (usually because it has failed).</li>
+  <li>Funded by levies on regulated firms.</li>
+</ul>
+<div class="boxes">
+  <div class="box"><strong>Key numbers</strong>
+    <ul>
+      <li>Deposits: <strong>£85,000</strong> per person per institution</li>
+      <li>Investment: typically £85,000 (exam often focuses on the number)</li>
+    </ul>
+  </div>
+  <div class="box"><strong>Not covered</strong>
+    <ul>
+      <li>Losses from normal market movement (investment value falling)</li>
+      <li>Some non-regulated products / scams</li>
+      <li>P2P lending losses are often tested as not FSCS protected</li>
+    </ul>
+  </div>
+</div>
+<div class="success"><strong>Kenneth’s Angle</strong><p>Think of FSCS as “creditor protection after default”: it only triggers when the firm cannot pay. FOS is “dispute resolution while the firm still exists”.</p></div>
+</section>
+
+<section class="panel"><h2>Memorise</h2>
+<div class="boxes">
+  <div class="box"><strong>8-week rule</strong><p>Final response within 8 weeks</p></div>
+  <div class="box"><strong>FOS vs FSCS</strong><p>FOS = complaints resolution; FSCS = compensation on firm failure</p></div>
+  <div class="box"><strong>FSCS deposits</strong><p>£85,000 per person per institution</p></div>
+</div>
+</section>
+
+<section class="panel"><h2>Practice Questions (MCQ)</h2>
+<div class="mq"><div class="mq-q">Q1. A client is unhappy with an adviser’s service. What is the correct first step?</div>
+<div class="opts"><div>A. Go straight to FSCS</div><div>B. Go straight to FOS without contacting the firm</div><div>C. Use the firm’s internal complaints procedure first</div><div>D. Call the Bank of England</div></div>
+<details><summary>Reveal answer</summary><div class="answer"><strong>Answer: C</strong> — Internal complaints procedure first, then FOS if unresolved.</div></details></div>
+
+<div class="mq"><div class="mq-q">Q2. What does FSCS primarily do?</div>
+<div class="opts"><div>A. Sets interest rates</div><div>B. Resolves disputes between clients and firms</div><div>C. Pays compensation when an authorised firm fails and cannot meet claims</div><div>D. Approves financial promotions</div></div>
+<details><summary>Reveal answer</summary><div class="answer"><strong>Answer: C</strong> — FSCS pays compensation when firms fail.</div></details></div>
+
+<div class="mq"><div class="mq-q">Q3. What is the FSCS deposit protection limit per person per institution?</div>
+<div class="opts"><div>A. £50,000</div><div>B. £85,000</div><div>C. £100,000</div><div>D. Unlimited</div></div>
+<details><summary>Reveal answer</summary><div class="answer"><strong>Answer: B</strong> — £85,000 per person per institution.</div></details></div>
+</section>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Day 13 — Regulation of Financial Services (Ch5 Part 1)</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;background:#f6f8fb;color:#1f2937;line-height:1.7}
+.hdr{background:#12355b;color:#fff;padding:18px 20px;position:sticky;top:0;z-index:5}
+.hdr a{color:#fff;opacity:.85;text-decoration:none}
+main{max-width:860px;margin:0 auto;padding:20px}
+.panel{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:22px;margin:18px 0}
+h2{font-size:1.2rem;margin:18px 0 10px;color:#12355b}
+h3{font-size:1rem;color:#374151;margin:12px 0 6px}
+p{margin:8px 0}
+ul,ol{padding-left:20px;margin:8px 0}
+li{margin:5px 0}
+.tag{display:inline-block;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:700;margin-right:4px}
+.tag.uk{background:#dbeafe;color:#1d4ed8}
+.tag.exam{background:#fef3c7;color:#92400e}
+.tag.kw{background:#f0fdf4;color:#166534}
+.tag.trap{background:#fff1f2;color:#be123c}
+.boxes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0}
+.box{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:14px}
+.boxes-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:12px 0}
+.box3{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:12px;font-size:13px}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px}
+th,td{border:1px solid #e5e7eb;padding:8px 10px;text-align:left}
+th{background:#dbeafe;color:#1d4ed8;font-weight:700}
+.mq{border:1px solid #e5e7eb;border-radius:14px;padding:14px;margin:12px 0;background:#fcfcfd}
+.mq-q{font-weight:700;margin-bottom:8px}
+.opts div{padding:5px 0}
+details{margin-top:8px;background:#f8fafc;border-radius:10px;padding:10px 12px}
+summary{cursor:pointer;font-weight:600;color:#12355b}
+.answer strong{color:#166534}
+.done{background:#f0fdf4;border:2px solid #16a34a;border-radius:12px;padding:14px;margin-top:18px;display:flex;align-items:center;gap:10px}
+.done input[type=checkbox]{width:20px;height:20px;accent-color:#16a34a}
+.prev-next{display:flex;justify-content:space-between;padding:16px 0}
+.prev-next a{display:inline-block;padding:10px 16px;background:#12355b;color:#fff;border-radius:10px;text-decoration:none;font-size:14px}
+.muted{color:#6b7280;font-size:13px}
+.warning{background:#fff1f2;border-left:4px solid #be123c;padding:12px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+.success{background:#f0fdf4;border-left:4px solid #16a34a;padding:12px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+.info{background:#fef3c7;border-left:4px solid #f59e0b;padding:12px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+@media(max-width:700px){.boxes,.boxes-3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="hdr">
+<div style="max-width:860px;margin:0 auto">
+<a href="../index.html" style="color:#fff;opacity:.85;text-decoration:none">&#8592; Dashboard</a>
+<h1 style="font-size:1.3rem;margin:4px 0">Day 13 — Regulation of Financial Services (Ch5 Part 1)</h1>
+<div class="muted">CeMAP 1 · Chapter 5 Topics 1–12</div>
+</div>
+</header>
+<main>
+
+<section class="panel"><h2>Overview (Chapter 5: The Regulation of Financial Services)</h2>
+<div class="boxes">
+  <div class="box"><span class="tag uk">CeMAP 1</span><strong>Topics covered today (Ch5 #1–#12)</strong>
+    <ul>
+      <li>Current regulation (FCA/PRA split)</li>
+      <li>EU impact on UK regulation</li>
+      <li>Main UK legislation (FSMA 2000 etc.)</li>
+      <li>Regulatory aims/objectives</li>
+      <li>FCA scope/powers</li>
+      <li>FCA Principles for Businesses</li>
+      <li>Prudential regulation</li>
+      <li>Basel accords (simple)</li>
+      <li>Fair Treatment of Customers (TCF)</li>
+      <li>FCA Consumer Duty</li>
+      <li>How customers are protected (FSCS/FOS basics)</li>
+      <li>SM&CR overview</li>
+    </ul>
+  </div>
+  <div class="box"><span class="tag exam">Exam Focus</span><strong>High-yield</strong>
+    <ul>
+      <li>PRA vs FCA (prudential vs conduct)</li>
+      <li>FCA 3 Operational Objectives</li>
+      <li>Principles for Businesses (integrity / due skill, care & diligence / TCF)</li>
+      <li>Consumer Duty 4 outcomes</li>
+      <li>SM&CR = personal accountability</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="panel"><h2>1. Current Regulation (FCA + PRA)</h2>
+<div class="boxes">
+  <div class="box"><strong>PRA (Prudential Regulation Authority)</strong>
+    <ul>
+      <li>Part of Bank of England</li>
+      <li>Focus: <strong>safety and soundness</strong> of firms</li>
+      <li>Covers: banks/building societies/credit unions, insurers, major investment firms</li>
+    </ul>
+  </div>
+  <div class="box"><strong>FCA (Financial Conduct Authority)</strong>
+    <ul>
+      <li>Focus: <strong>conduct</strong> + consumer outcomes + market integrity</li>
+      <li>Regulates most retail financial services firms</li>
+      <li>Sets detailed rulebooks (COBS/MCOB/CONC etc.)</li>
+    </ul>
+  </div>
+</div>
+<div class="warning"><strong>Exam Trap</strong><p>Don’t mix PRA/FCA roles: PRA = prudential (capital, resilience). FCA = conduct (treat customers fairly, disclosure, sales practices).</p></div>
+</section>
+
+<section class="panel"><h2>2. EU Impact on UK Regulation</h2>
+<ul>
+  <li>Historically: many UK rules were shaped by EU directives/regulations (e.g. MiFID, Mortgage Credit Directive).</li>
+  <li>Post-Brexit: rules remain largely in place, but UK can amend independently (FCA still enforces UK versions).</li>
+</ul>
+</section>
+
+<section class="panel"><h2>3. Main UK Legislation</h2>
+<ul>
+  <li><strong>FSMA 2000</strong>: core framework for regulation; defines regulated activities/authorisation.</li>
+  <li>Supporting legislation & secondary rules: FCA Handbook, statutory instruments.</li>
+  <li>Data protection: UK GDPR / Data Protection Act 2018 (covered later in Ch10).</li>
+</ul>
+</section>
+
+<section class="panel"><h2>4. Regulatory Aims & Objectives (FCA)</h2>
+<ul>
+  <li><strong>Consumer protection</strong></li>
+  <li><strong>Market integrity</strong></li>
+  <li><strong>Competition</strong> in the interests of consumers</li>
+</ul>
+<div class="info"><strong>Exam Tip</strong><p>If a question asks “what is FCA trying to achieve?”, these 3 are the go-to answers.</p></div>
+</section>
+
+<section class="panel"><h2>5. FCA Scope & Powers (high level)</h2>
+<ul>
+  <li>Authorisation, supervision, enforcement, rule-making.</li>
+  <li>Can fine firms/individuals; restrict permissions; require redress programs.</li>
+</ul>
+</section>
+
+<section class="panel"><h2>6. FCA Principles for Businesses (what they feel like)</h2>
+<ul>
+  <li>Act with <strong>integrity</strong></li>
+  <li>Act with <strong>due skill, care and diligence</strong></li>
+  <li><strong>Management and control</strong> (systems/controls)</li>
+  <li><strong>Customers’ interests</strong> (treat them fairly)</li>
+  <li><strong>Communications</strong> must be clear, fair and not misleading</li>
+</ul>
+<div class="success"><strong>Kenneth’s Angle</strong><p>Think like credit risk: prudential rules stop firms collapsing; conduct rules stop mis-selling. Exams test whether you know which bucket a rule sits in.</p></div>
+</section>
+
+<section class="panel"><h2>7. Prudential Regulation (why it exists)</h2>
+<ul>
+  <li>Ensures firms hold enough capital/liquidity to survive shocks.</li>
+  <li>Prevents systemic failures (2008-style contagion).</li>
+</ul>
+</section>
+
+<section class="panel"><h2>8. Basel Accords (Made Simple)</h2>
+<ul>
+  <li>International banking standards for capital adequacy & risk management.</li>
+  <li>Basel III strengthened capital and introduced liquidity requirements after 2008.</li>
+</ul>
+</section>
+
+<section class="panel"><h2>9. Fair Treatment of Customers (TCF)</h2>
+<ul>
+  <li>FCA expects fair outcomes across the customer journey (sales → after-sales support → complaints).</li>
+  <li>Linked to Principle 6 (Customers’ interests).</li>
+</ul>
+</section>
+
+<section class="panel"><h2>10. Consumer Duty (2023)</h2>
+<div class="boxes">
+  <div class="box"><strong>The Duty</strong>
+    <ul>
+      <li>Firms must deliver <strong>good outcomes</strong> for retail customers.</li>
+      <li>Higher standard than TCF (more measurable outcomes).</li>
+    </ul>
+  </div>
+  <div class="box"><strong>4 outcomes</strong>
+    <ul>
+      <li>Products & services</li>
+      <li>Price & value</li>
+      <li>Consumer understanding</li>
+      <li>Consumer support</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<section class="panel"><h2>11. How Customers are Protected</h2>
+<ul>
+  <li><strong>FOS</strong>: resolves complaints (free to consumer).</li>
+  <li><strong>FSCS</strong>: compensation when authorised firms fail (key numbers covered earlier).</li>
+</ul>
+</section>
+
+<section class="panel"><h2>12. SM&CR (Senior Managers & Certification Regime)</h2>
+<ul>
+  <li>Senior Managers: clear accountability + Statement of Responsibilities.</li>
+  <li>Certification: key roles assessed annually as fit & proper.</li>
+  <li>Conduct Rules apply broadly.</li>
+</ul>
+<div class="warning"><strong>Exam Trap</strong><p>SM&CR is about <strong>personal accountability</strong>. If something goes wrong, FCA can pursue individuals, not just the firm.</p></div>
+</section>
+
+<section class="panel"><h2>Memorise</h2>
+<div class="boxes">
+  <div class="box"><strong>FCA objectives</strong><p>Consumer protection · Market integrity · Competition</p></div>
+  <div class="box"><strong>PRA vs FCA</strong><p>PRA = prudential; FCA = conduct</p></div>
+  <div class="box"><strong>Consumer Duty outcomes</strong><p>Products · Price/Value · Understanding · Support</p></div>
+</div>
+</section>
+
+<section class="panel"><h2>Practice Questions (MCQ)</h2>
+<div class="mq"><div class="mq-q">Q1. Which regulator focuses on the safety and soundness of banks and insurers?</div>
+<div class="opts"><div>A. FCA</div><div>B. PRA</div><div>C. FOS</div><div>D. FSCS</div></div>
+<details><summary>Reveal answer</summary><div class="answer"><strong>Answer: B</strong> — PRA is the prudential regulator under the Bank of England.</div></details></div>
+
+<div class="mq"><div class="mq-q">Q2. What are the FCA’s three operational objectives?</div>
+<div class="opts"><div>A. Growth, employment, stability</div><div>B. Consumer protection, market integrity, competition</div><div>C. Capital adequacy, liquidity, leverage</div><div>D. Disclosure, affordability, suitability</div></div>
+<details><summary>Reveal answer</summary><div class="answer"><strong>Answer: B</strong> — Consumer protection, market integrity, competition.</div></details></div>
+
+<div class="mq"><div class="mq-q">Q3. Which of the following is a Consumer Duty outcome?</div>
+<div class="opts"><div>A. Capital buffers</div><div>B. Consumer understanding</div><div>C. Basel III compliance</div><div>D. Resolution planning</div></div>
+<details><summary>Reveal answer</summary><div class="answer"><strong>Answer: B</strong> — Consumer understanding is one of the 4 Duty outcomes.</div></details></div>
+</section>
+
+</main>
+</body>
+</html>

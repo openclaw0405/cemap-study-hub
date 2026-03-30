@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Day 19 — AML + Data Protection (Ch10)</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;background:#f6f8fb;color:#1f2937;line-height:1.7}
+.hdr{background:#12355b;color:#fff;padding:18px 20px;position:sticky;top:0;z-index:5}
+.hdr a{color:#fff;opacity:.85;text-decoration:none}
+main{max-width:860px;margin:0 auto;padding:20px}
+.panel{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:22px;margin:18px 0}
+h2{font-size:1.2rem;margin:18px 0 10px;color:#12355b}
+h3{font-size:1rem;color:#374151;margin:12px 0 6px}
+p{margin:8px 0}
+ul,ol{padding-left:20px;margin:8px 0}
+li{margin:5px 0}
+.tag{display:inline-block;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:700;margin-right:4px}
+.tag.uk{background:#dbeafe;color:#1d4ed8}
+.tag.exam{background:#fef3c7;color:#92400e}
+.tag.kw{background:#f0fdf4;color:#166534}
+.tag.trap{background:#fff1f2;color:#be123c}
+.boxes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0}
+.box{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:14px}
+.boxes-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:12px 0}
+.box3{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:12px;font-size:13px}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px}
+th,td{border:1px solid #e5e7eb;padding:8px 10px;text-align:left}
+th{background:#dbeafe;color:#1d4ed8;font-weight:700}
+.mq{border:1px solid #e5e7eb;border-radius:14px;padding:14px;margin:12px 0;background:#fcfcfd}
+.mq-q{font-weight:700;margin-bottom:8px}
+.opts div{padding:5px 0}
+details{margin-top:8px;background:#f8fafc;border-radius:10px;padding:10px 12px}
+summary{cursor:pointer;font-weight:600;color:#12355b}
+.answer strong{color:#166534}
+.done{background:#f0fdf4;border:2px solid #16a34a;border-radius:12px;padding:14px;margin-top:18px;display:flex;align-items:center;gap:10px}
+.done input[type=checkbox]{width:20px;height:20px;accent-color:#16a34a}
+.prev-next{display:flex;justify-content:space-between;padding:16px 0}
+.prev-next a{display:inline-block;padding:10px 16px;background:#12355b;color:#fff;border-radius:10px;text-decoration:none;font-size:14px}
+.muted{color:#6b7280;font-size:13px}
+.warning{background:#fff1f2;border-left:4px solid #be123c;padding:12px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+.success{background:#f0fdf4;border-left:4px solid #16a34a;padding:12px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+.info{background:#fef3c7;border-left:4px solid #f59e0b;padding:12px 14px;border-radius:0 10px 10px 0;margin:12px 0}
+@media(max-width:700px){.boxes,.boxes-3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="hdr">
+<div style="max-width:860px;margin:0 auto">
+<a href="../index.html" style="color:#fff;opacity:.85;text-decoration:none">&#8592; Dashboard</a>
+<h1 style="font-size:1.3rem;margin:4px 0">Day 19 — AML + Data Protection (Ch10)</h1>
+<div class="muted">CeMAP 1 · Chapter 10 Topics 1–2</div>
+</div>
+</header>
+<main>
+
+<section class="panel"><h2>Overview (Chapter 10: Anti-Money Laundering + Data Protection)</h2>
+<div class="boxes">
+  <div class="box"><span class="tag uk">CeMAP 1</span><strong>Topics today (Ch10 #1–#2)</strong>
+    <ul>
+      <li>Money laundering & terrorist financing</li>
+      <li>Data protection</li>
+    </ul>
+  </div>
+  <div class="box"><span class="tag exam">Exam Focus</span><strong>High-yield</strong>
+    <ul>
+      <li>CDD / EDD / source of funds</li>
+      <li>SAR to NCA + tipping off offence</li>
+      <li>MLRO role</li>
+      <li>GDPR principles + 72-hour ICO breach reporting</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="panel"><h2>1. Money Laundering — what it is</h2>
+<ul>
+  <li>Money laundering = disguising the origin of criminal property to make it appear legitimate.</li>
+  <li>Three classic stages: <strong>Placement</strong> → <strong>Layering</strong> → <strong>Integration</strong>.</li>
+</ul>
+<div class="boxes">
+  <div class="box"><strong>Placement</strong><p>Getting cash into the financial system (e.g., depositing cash, buying monetary instruments).</p></div>
+  <div class="box"><strong>Layering</strong><p>Complex transactions to obscure trail (multiple transfers, offshore accounts, crypto exchanges).</p></div>
+  <div class="box"><strong>Integration</strong><p>Reintroducing funds as apparently legitimate wealth (property purchase, businesses, investments).</p></div>
+</div>
+</section>
+
+<section class="panel"><h2>2. Key AML Laws & Framework</h2>
+<ul>
+  <li><strong>Proceeds of Crime Act 2002 (POCA)</strong>: money laundering offences; failure to disclose.</li>
+  <li><strong>Terrorism Act 2000</strong>: terrorist financing offences.</li>
+  <li><strong>Money Laundering Regulations</strong>: CDD/EDD requirements for firms.</li>
+</ul>
+</section>
+
+<section class="panel"><h2>3. Customer Due Diligence (CDD)</h2>
+<ul>
+  <li>Identify and verify client identity (name, DOB) + address.</li>
+  <li>Understand purpose and intended nature of the relationship.</li>
+  <li>Ongoing monitoring: transactions must make sense vs client profile.</li>
+</ul>
+<div class="info"><strong>Exam Tip</strong><p>CDD must be completed <strong>before</strong> establishing the business relationship / carrying out transactions (subject to limited exceptions).</p></div>
+</section>
+
+<section class="panel"><h2>4. Enhanced Due Diligence (EDD)</h2>
+<ul>
+  <li>Applied to higher-risk clients: PEPs (politically exposed persons), complex structures, high-risk jurisdictions.</li>
+  <li>Deeper checks: source of wealth, source of funds, senior management approval, increased monitoring.</li>
+</ul>
+</section>
+
+<section class="panel"><h2>5. Suspicious Activity Reports (SAR) + MLRO</h2>
+<ul>
+  <li>Firms must have an <strong>MLRO</strong> (Money Laundering Reporting Officer).</li>
+  <li>If suspicion exists, staff report internally to MLRO; MLRO decides whether to file a <strong>SAR</strong> to the <strong>NCA</strong>.</li>
+  <li><strong>Tipping off</strong> (telling the client a SAR was made) is a criminal offence.</li>
+</ul>
+<div class="warning"><strong>Exam Trap</strong><p>If you suspect money laundering: don’t confront the client. Follow internal process → MLRO → SAR to NCA. Never disclose that a SAR has been filed.</p></div>
+</section>
+
+<section class="panel"><h2>6. Data Protection (UK GDPR / DPA 2018)</h2>
+<ul>
+  <li>Personal data must be processed lawfully, fairly, transparently.</li>
+  <li>Keep data secure; limit access; keep only what you need; retain only as long as necessary.</li>
+  <li>Individuals have rights: access, rectification, erasure, restriction, portability.</li>
+</ul>
+<div class="boxes">
+  <div class="box"><strong>Breach reporting</strong><p>Report to ICO within <strong>72 hours</strong> if the breach is likely to risk individuals’ rights/freedoms.</p></div>
+  <div class="box"><strong>Practical controls</strong><p>Encryption, strong passwords, least-privilege access, secure disposal, incident logs.</p></div>
+</div>
+</section>
+
+<section class="panel"><h2>Memorise</h2>
+<div class="boxes">
+  <div class="box"><strong>AML stages</strong><p>Placement → Layering → Integration</p></div>
+  <div class="box"><strong>CDD vs EDD</strong><p>EDD for higher risk (PEP/high-risk jurisdictions/complex structures)</p></div>
+  <div class="box"><strong>SAR</strong><p>SAR to NCA via MLRO; tipping off is an offence</p></div>
+  <div class="box"><strong>GDPR breach</strong><p>ICO within 72 hours (if risk to individuals)</p></div>
+</div>
+</section>
+
+<section class="panel"><h2>Practice Questions (MCQ)</h2>
+<div class="mq"><div class="mq-q">Q1. What are the three classic stages of money laundering?</div>
+<div class="opts"><div>A. Lending, borrowing, default</div><div>B. Placement, layering, integration</div><div>C. Deposit, withdrawal, transfer</div><div>D. Verify, approve, repay</div></div>
+<details><summary>Reveal answer</summary><div class="answer"><strong>Answer: B</strong> — Placement → Layering → Integration.</div></details></div>
+
+<div class="mq"><div class="mq-q">Q2. If an adviser suspects money laundering, what should they do?</div>
+<div class="opts"><div>A. Tell the client you are reporting them</div><div>B. Report internally to the MLRO and follow SAR process</div><div>C. Ignore it unless certain</div><div>D. Postpone and warn colleagues publicly</div></div>
+<details><summary>Reveal answer</summary><div class="answer"><strong>Answer: B</strong> — Report to MLRO; MLRO may file SAR to NCA. Do not tip off.</div></details></div>
+
+<div class="mq"><div class="mq-q">Q3. Under GDPR, when should a serious data breach generally be reported to the ICO?</div>
+<div class="opts"><div>A. Within 24 hours</div><div>B. Within 72 hours</div><div>C. Within 30 days</div><div>D. Only if the client complains</div></div>
+<details><summary>Reveal answer</summary><div class="answer"><strong>Answer: B</strong> — Report within 72 hours if risk to individuals’ rights/freedoms.</div></details></div>
+</section>
+
+</main>
+</body>
+</html>

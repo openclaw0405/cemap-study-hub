@@ -1,0 +1,200 @@
+[
+  {
+    "day": 1,
+    "title": "The Financial Services Industry + Bank of England",
+    "module": "UKFR",
+    "week": "Week 1, Month 1",
+    "topic": "The Financial Services Industry + Bank of England",
+    "summary": "How the UK financial services industry works, why intermediaries exist, Bank of England roles, money flows, retail vs wholesale banking, credit unions, and proprietary vs mutual ownership.",
+    "examFocus": "Which institution type? Why does this intermediary exist? BoE Lender of Last Resort? Which funding model is most risky? FSCS protection limits?",
+    "keyPoints": [
+      "Financial services allow money to act as a medium of exchange and store of value.",
+      "Intermediation = money flows through a bank (middleman). Disintermediation = money flows directly (e.g., P2P lending).",
+      "P2P lending does NOT have FSCS protection — investors can lose everything.",
+      "Bank of England has 5 roles: Monetary Policy, Lender of Last Resort, Financial Stability, Resolution, Issuing banknotes.",
+      "MPC sets interest rates to keep CPI inflation at 2%.",
+      "Retail deposits are more stable; wholesale funding is more risky (can disappear in a crisis).",
+      "Credit unions require a common bond; savings protected by FSCS up to £85,000.",
+      "Mutual/building societies are owned by members, not shareholders."
+    ],
+    "mustMemories": [
+      "BoE 5 roles: Monetary Policy, Lender of Last Resort, Financial Stability, Resolution, Issuing banknotes.",
+      "FSCS deposit limit: £85,000 per depositor per institution.",
+      "P2P lending: NOT FSCS protected.",
+      "Wholesale funding is more risky than retail deposits."
+    ],
+    "examTraps": [
+      "P2P lending has NO FSCS protection.",
+      "FCA and PRA regulate financial advisers — NOT the BoE directly.",
+      "BoE is sole issuer of banknotes in England and Wales only."
+    ],
+    "mcqs": [
+      {
+        "q": "Which of the following is NOT a role of the Bank of England?",
+        "opts": ["Issuing banknotes", "Setting the Bank Rate through the MPC", "Regulating all financial advisers directly", "Lender of Last Resort"],
+        "a": 2,
+        "ex": "The FCA and PRA regulate financial advisers. The BoE sets monetary policy and is Lender of Last Resort."
+      },
+      {
+        "q": "P2P lending is protected by which compensation scheme?",
+        "opts": ["FSCS", "FOS", "Neither — P2P lending is not protected by either", "Both FSCS and FOS"],
+        "a": 2,
+        "ex": "P2P lending is NOT protected by FSCS. Investors can lose their entire investment."
+      }
+    ]
+  },
+  {
+    "day": 2,
+    "title": "Financial Products",
+    "module": "UKFR",
+    "week": "Week 1, Month 1",
+    "topic": "Financial Products",
+    "summary": "All major financial products: deposit accounts, ISAs, gilts, bonds, equities, ETFs, life assurance, critical illness cover, income protection, and how each product fits into a financial plan.",
+    "examFocus": "Which product solves this client need? What are the key features and risks of each product? How do tax wrappers (ISAs, pensions) affect returns?",
+    "keyPoints": [
+      "Instant access accounts: low interest, high liquidity. High-interest accounts: require minimum balance or notice period.",
+      "Personal Savings Allowance: £1,000 (basic rate), £500 (higher rate), £0 (additional rate).",
+      "ISA annual allowance: £20,000. JISA: £9,000. LISA: £4,000/year with 25% government bonus (max £1,000 free per year).",
+      "LISA is for ages 18–39; for first home (up to £450k) or retirement.",
+      "Gilts: government bonds, CGT exempt, index-linked gilts rise with CPI.",
+      "Corporate bonds: investment grade (low risk) vs high yield/junk (higher risk).",
+      "Convertible bonds can be converted into shares; pay lower interest.",
+      "Decreasing term assurance = repayment mortgage. Level term = interest-only mortgage.",
+      "CIC pays lump sum on diagnosis of specified illness — NOT the same as life assurance.",
+      "Income Protection Insurance (IPI): pays 60–70% of earnings monthly; deferred period 4 weeks to 1 year."
+    ],
+    "mustMemories": [
+      "ISA allowance: £20,000. JISA: £9,000. LISA bonus: 25% (max £1,000/year).",
+      "Decreasing term = repayment mortgage. Level term = interest-only mortgage.",
+      "CIC = lump sum on diagnosis (not death).",
+      "IPI = 60–70% of earnings monthly until return to work, retirement, or policy end.",
+      "Gilts: CGT exempt."
+    ],
+    "examTraps": [
+      "Decreasing term and level term are frequently confused — match to mortgage type.",
+      "CIC is NOT life assurance — it pays on diagnosis, not death.",
+      "ISA allowance is total across all ISA types, not per type."
+    ],
+    "mcqs": [
+      {
+        "q": "A client has a repayment mortgage of £200,000. Which type of life assurance is most appropriate?",
+        "opts": ["Level term assurance", "Decreasing term assurance", "Whole-of-life assurance", "Critical illness cover"],
+        "a": 1,
+        "ex": "Decreasing term assurance matches the reducing mortgage balance of a repayment mortgage."
+      },
+      {
+        "q": "What is the LISA government bonus?",
+        "opts": ["20%", "25%", "50%", "10%"],
+        "a": 1,
+        "ex": "The government adds a 25% bonus on contributions up to £4,000 per year = £1,000 free money per year."
+      }
+    ]
+  },
+  {
+    "day": 3,
+    "title": "UK Tax Foundations",
+    "module": "UKFR",
+    "week": "Week 1, Month 1",
+    "topic": "UK Tax Foundations",
+    "summary": "Income Tax, Capital Gains Tax, Inheritance Tax, Stamp Duty Land Tax, and National Insurance. Core UK taxes that affect every financial planning recommendation.",
+    "examFocus": "Tax rates, bands, allowances, exemptions, and how financial products interact with these taxes. MRT1/2 loves tax-adjusted return calculations.",
+    "keyPoints": [
+      "Income Tax (2024/25): Personal Allowance £12,570 (0%); Basic rate 20% up to £50,270; Higher rate 40% up to £125,140; Additional rate 45% above £125,140.",
+      "Personal Allowance tapers at £100,000: reduces by £1 for every £2 above £100,000; fully removed above £125,140.",
+      "CGT Annual Exempt Amount: £3,000 (2024/25). Residential property: 18%/24%. Other assets: 10%/20%.",
+      "PPR exemption: main home is generally exempt from CGT.",
+      "IHT: 40% on estate above nil-rate band (£325,000). RNRB: additional £175,000 if home passed to direct descendants.",
+      "Total IHT-free potential: £500,000 (single) or £1,000,000 (married couple).",
+      "IHT taper relief: gifts 3–7 years before death — reduces but does not eliminate IHT.",
+      "SDLT: second property adds 3% surcharge on top of standard rates.",
+      "First-time buyer SDLT relief: 0% up to £425,000; 5% on £425,001–£625,000.",
+      "NI: 35 qualifying years needed for full new State Pension. State Pension age: 66 (rising to 67 by 2028)."
+    ],
+    "mustMemories": [
+      "Personal Allowance: £12,570. Basic: 20%. Higher: 40%. Additional: 45%.",
+      "CGT exempt amount: £3,000. Residential 18%/24%. Other 10%/20%.",
+      "IHT nil-rate band: £325,000 + RNRB £175,000. Rate: 40%.",
+      "SDLT second property: +3% surcharge on top of standard rates.",
+      "Full State Pension: 35 years NI contributions."
+    ],
+    "examTraps": [
+      "CGT is charged on the gain, not the sale price.",
+      "Different CGT rates apply to residential property vs other assets.",
+      "Taper relief reduces IHT — it does NOT eliminate it.",
+      "SDLT 3% surcharge for second properties is ON TOP OF standard rates, not instead of."
+    ],
+    "mcqs": [
+      {
+        "q": "What is the current personal allowance for income tax (2024/25)?",
+        "opts": ["£10,000", "£12,570", "£14,000", "£11,000"],
+        "a": 1,
+        "ex": "The personal allowance is £12,570 for 2024/25."
+      },
+      {
+        "q": "A client buys a second property for £300,000. What SDLT rate applies to the portion between £250,001–£300,000?",
+        "opts": ["2% flat rate", "5% only", "5% + 3% surcharge = 8%", "0% as below £425,000"],
+        "a": 2,
+        "ex": "The 3% SDLT surcharge for second properties applies on top of standard SDLT rates. The standard 5% rate plus 3% surcharge = 8% on that band."
+      },
+      {
+        "q": "How many years of NI contributions are required for the full new State Pension?",
+        "opts": ["30 years", "35 years", "40 years", "10 years"],
+        "a": 1,
+        "ex": "35 years of qualifying NI contributions are required for the full new State Pension."
+      }
+    ]
+  },
+  {
+    "day": 4,
+    "title": "Monetary Policy, Inflation and Economic Policy",
+    "module": "UKFR",
+    "week": "Week 1, Month 1",
+    "topic": "Monetary Policy, Inflation and Economic Policy",
+    "summary": "The MPC, inflation targeting, interest rate mechanisms, CPI vs RPI, deflation, and how monetary and fiscal policy affect the economy and mortgage advice.",
+    "examFocus": "MPC meets 8 times/year, CPI target 2%, what happens when inflation breaches the target corridor, and how rate changes affect tracker vs fixed-rate mortgage holders.",
+    "keyPoints": [
+      "Government economic aims: price stability (CPI 2%), low unemployment, neutral balance of payments, satisfactory growth.",
+      "MPC is a sub-committee of the Bank of England that sets the official Bank Rate.",
+      "CPI inflation target: 2%. Target corridor: 1%–3%. If breached, Governor must write open letter to Chancellor.",
+      "MPC meets 8 times per year (approximately every 6 weeks) — NOT 12.",
+      "CPI: government's primary inflation measure, based on 180,000+ price quotes monthly.",
+      "RPI: generally higher than CPI, still used as an index but not strictly targeted.",
+      "RPIX: RPI excluding mortgage interest payments.",
+      "Deflation = general decline in prices (serious risk to economy). Disinflation = slowing rate of price increases (NOT the same as deflation).",
+      "Tracker mortgages: immediately affected by BoE rate changes. Fixed-rate mortgages: insulated during the deal period.",
+      "Monetary policy (BoE, interest rates) vs Fiscal policy (government, taxation and spending)."
+    ],
+    "mustMemories": [
+      "MPC meets 8 times per year.",
+      "CPI target: 2% (Governor writes open letter if above 3% or below 1%).",
+      "Tracker mortgages: immediate rate change effect. Fixed-rate: insulated during deal period.",
+      "Deflation = prices falling. Disinflation = rate of price increases slowing (NOT falling prices).",
+      "Monetary policy = BoE (interest rates). Fiscal policy = Government (tax and spending)."
+    ],
+    "examTraps": [
+      "MPC meets 8 times per year — NOT monthly (12 times).",
+      "Disinflation is NOT the same as deflation.",
+      "Fixed-rate mortgage holders are NOT immediately affected when the BoE changes rates."
+    ],
+    "mcqs": [
+      {
+        "q": "The MPC meets how many times per year?",
+        "opts": ["4 times", "6 times", "8 times", "12 times"],
+        "a": 2,
+        "ex": "The MPC meets 8 times per year, approximately every 6 weeks."
+      },
+      {
+        "q": "If CPI inflation falls below 1%, what must the Governor of the BoE do?",
+        "opts": ["Immediately cut interest rates to zero", "Write an open letter to the Chancellor explaining why and what action is being taken", "Increase the inflation target to 3%", "Inform the Treasury Select Committee only"],
+        "a": 1,
+        "ex": "If inflation deviates more than 1% from the 2% target (i.e., above 3% or below 1%), the Governor must write an open letter to the Chancellor."
+      },
+      {
+        "q": "What is the difference between deflation and disinflation?",
+        "opts": ["They mean the same thing", "Deflation = prices falling; Disinflation = rate of price increases slowing", "Disinflation = prices falling; Deflation = rate slowing", "Neither affects mortgage rates"],
+        "a": 1,
+        "ex": "Deflation is a general decline in prices. Disinflation is when the price level is still rising but at a slower rate."
+      }
+    ]
+  }
+]
